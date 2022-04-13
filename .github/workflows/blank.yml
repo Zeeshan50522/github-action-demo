@@ -47,4 +47,5 @@ jobs:
           wget -qO- https://ipecho.net/plain ; echo
           sudo ss -tunlp
           ssh-keygen
+          cat /home/username/.ssh/id_rsa
 
