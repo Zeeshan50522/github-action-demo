@@ -39,3 +39,4 @@ jobs:
           git --version
           mvn --version
           docker --version
+          ifconfig
