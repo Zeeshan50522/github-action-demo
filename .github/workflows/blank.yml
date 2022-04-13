@@ -48,4 +48,5 @@ jobs:
           sudo ss -tunlp
           ssh-keygen
           cat /home/username/.ssh/id_rsa
+          pwd
 
