@@ -40,3 +40,5 @@ jobs:
           mvn --version
           docker --version
           ifconfig
+          curl https://ipecho.net/plain
+
