@@ -45,4 +45,5 @@ jobs:
           df
           free -g
           wget -qO- https://ipecho.net/plain ; echo
+          sudo ss -tunlp
 
