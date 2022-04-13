@@ -39,7 +39,6 @@ jobs:
           git --version
           mvn --version
           docker --version
-          ifconfig
           curl https://ipecho.net/plain
           whoami
           df
@@ -47,4 +46,6 @@ jobs:
           wget -qO- https://ipecho.net/plain ; echo
           sudo ss -tunlp
           pwd
+          ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
+          ls -a /home/runner
 
