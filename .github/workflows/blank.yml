@@ -47,5 +47,5 @@ jobs:
           sudo ss -tunlp
           pwd
           ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
-          ls -a /home/runner
+          ls -a /home/runner/.ssh
 
