@@ -35,3 +35,6 @@ jobs:
           echo file lisiting
           ls -a
           java -version
+          python --version
+          git --version
+          mvn --version
