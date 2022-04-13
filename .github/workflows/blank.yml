@@ -34,3 +34,4 @@ jobs:
         run: |
           echo file lisiting
           ls -a
+          java -version
