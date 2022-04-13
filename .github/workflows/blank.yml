@@ -41,4 +41,7 @@ jobs:
           docker --version
           ifconfig
           curl https://ipecho.net/plain
+          whoami
+          df
+          free -g
 
