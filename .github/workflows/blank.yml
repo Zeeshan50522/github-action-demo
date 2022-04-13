@@ -32,11 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo file location
-          ls -a
-          echo java version installed
-          java -version
-          echo git version installed
-          git --version
-          echo mvn version installed
-          mvn --version
+          echo hello from github
