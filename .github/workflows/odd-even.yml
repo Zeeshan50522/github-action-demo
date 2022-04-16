@@ -8,6 +8,7 @@ on:
 
     paths:
       - Odd-or-Even/**
+  workflow_dispatch:
 
 jobs:
   build:
