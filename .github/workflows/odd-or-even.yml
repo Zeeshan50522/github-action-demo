@@ -1,4 +1,4 @@
-name: python prime number github action
+name: python odd-even github action
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - dev
 
     paths:
-      - prime-number/**    
+      - Odd-or-Even/**
   workflow_dispatch:
 
 jobs:
@@ -15,5 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: repo list
+      - name: repo ls
         run: ls -l
+  
