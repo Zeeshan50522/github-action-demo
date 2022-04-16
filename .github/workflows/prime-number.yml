@@ -5,9 +5,9 @@ on:
     branches:
       - master
       - dev
-  paths:
-    - prime-number/**    
-  workflow_dispatch:
+ # paths:
+ #   - prime-number/**    
+ # workflow_dispatch:
 
 jobs:
   build:
