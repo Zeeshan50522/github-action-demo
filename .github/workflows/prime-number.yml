@@ -33,4 +33,4 @@ jobs:
       - name: list Horusec
         run: ls -l
       - name: Scanning Service
-        run: horusec start -p "./main.py" -o="json" -O="./results.json"
+        run: horusec start -p "./prime-number" -o="json" -O="./results.json"
