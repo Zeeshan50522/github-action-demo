@@ -27,8 +27,10 @@ jobs:
       - name: list repo
         run: ls -l
     
-    
-    #  - name: Downloading Horusec
-    #    run: curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
-    #  - name: Scanning Service
-    #    run: horusec start -p "./main.py" -o="json" -O="./results.json"
+      - name: Downloading Horusec
+        run: curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
+     
+      - name: list Horusec
+        run: ls -l
+      - name: Scanning Service
+        run: horusec start -p "./main.py" -o="json" -O="./results.json"
