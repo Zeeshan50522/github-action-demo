@@ -11,9 +11,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  Horusec:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: repo list
         run: ls -l
+
+  checking_code:
+    needs: [Horusec]
+    runs-on: ubuntu-latest
+    name: Horusec Scan
+    steps:
+      - name: Run Horusec
+        id: run_horusec
+        uses: fike/horusec-action@v0.1
+        with:
+          arguments: --config-file-path=horusec-config.json
