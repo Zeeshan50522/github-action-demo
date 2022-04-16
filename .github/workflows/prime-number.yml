@@ -23,6 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Horusec Scan
     steps:
+      - uses: actions/checkout@v3
       - name: list repo
         run: ls -l
     
