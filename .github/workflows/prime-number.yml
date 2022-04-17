@@ -41,6 +41,6 @@ jobs:
 
       - name: upload file to s3
         run: aws s3 cp results.json s3://hamza-test-static-website
-
-      - name: dokcer images list
+    
+      - name: docker images list
         run: docker ps
