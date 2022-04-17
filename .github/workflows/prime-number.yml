@@ -35,3 +35,6 @@ jobs:
       
       - name: aws s3 bucket list
         run: aws s3 ls
+      
+      - name: repo list
+        run: ls -l
