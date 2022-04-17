@@ -41,6 +41,9 @@ jobs:
     needs: [Horusec]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - name: repo
+        run: ls -l
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
         with:
