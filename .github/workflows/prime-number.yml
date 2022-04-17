@@ -12,13 +12,6 @@ on:
 
 jobs:
   Horusec:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: repo list
-        run: ls -l
-
-  checking_code:
     needs: [Horusec]
     runs-on: ubuntu-latest
     name: Horusec Scan
@@ -34,3 +27,12 @@ jobs:
         run: ls -l
       - name: Scanning Service
         run: horusec start -p "./prime-number" -o="json" -O="./results.json"
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCEES_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCEES_KEY }}
+          aws-region: us-east-1
+      
+      - name: aws s3 bucket list
+        run: aws s3 ls
