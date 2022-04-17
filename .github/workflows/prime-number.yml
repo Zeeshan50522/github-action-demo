@@ -47,3 +47,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.gcr_token }}
+      - name: docker image
+        run: |
+          docker build -t ghcr.io/ghcr.io/kasunsjc/nginx:v1/pythonsample
