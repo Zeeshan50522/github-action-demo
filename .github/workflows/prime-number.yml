@@ -38,3 +38,6 @@ jobs:
       
       - name: repo list
         run: ls -l
+
+      - name: upload file to s3
+        run: aws s3 cp result.json s3://hamza-test-static-website
