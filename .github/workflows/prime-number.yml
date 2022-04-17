@@ -53,3 +53,4 @@ jobs:
       - name: docker image
         run: |
           docker build ./prime-number -t ghcr.io/github-action-demo/pythonsample
+          docker push ghcr.io/github-action-demo/pythonsample
