@@ -52,4 +52,4 @@ jobs:
           password: ${{ secrets.gcr_token }}
       - name: docker image
         run: |
-          docker build ./prime-number -t ghcr.io/ghcr.io/kasunsjc/nginx:v1/pythonsample
+          docker build ./prime-number -t ghcr.io/github-action-demo/pythonsample
