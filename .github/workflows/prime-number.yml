@@ -52,5 +52,5 @@ jobs:
           password: ${{ secrets.gcr_token }}
       - name: docker image
         run: |
-          docker build ./prime-number -t ghcr.io/zeeshan50522/pythonsample
-          docker push ghcr.io/zeeshan50522/pythonsample
+          docker build ./prime-number -t ghcr.io/zeeshan50522/python-demo-app
+          docker push ghcr.io/zeeshan50522/python-demo-app
