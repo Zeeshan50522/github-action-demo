@@ -73,6 +73,7 @@ jobs:
           PRE_RELEASE_VERSION="${VERSION_SPLIT[1]}"
           BUILD_VERSION="${VERSION_SPLIT[2]}"
           docker build -t ghcr.io/zeeshan50522/prime_number/python-demo-app:$MAIN_VERSION-$PRE_RELEASE_VERSION-$BUILD_VERSION-$GITHUB_SHA -t ghcr.io/zeeshan50522/prime_number/python-demo-app:$GITHUB_SHA .
+          docker push ghcr.io/zeeshan50522/prime_number/python-demo-app:$MAIN_VERSION-$PRE_RELEASE_VERSION-$BUILD_VERSION-$GITHUB_SHA
          # docker push ghcr.io/zeeshan50522/python-demo-app
 
                    
