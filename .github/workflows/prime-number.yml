@@ -83,11 +83,11 @@ jobs:
       - name: clone repo
         uses: actions/checkout@v3
       
-      - name: Setting Environment Variable
-        run: bash scripts/update_github_env.sh
-
       - name: Checking Environment
         run: echo $ENVIRONMENT  
-          
+
+  #    - name: Setting Environment Variable
+  #      run: bash scripts/update_github_env.sh
+    
           
           
