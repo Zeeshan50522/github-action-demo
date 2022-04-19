@@ -24,6 +24,8 @@ jobs:
      
       - name: list Horusec
         run: ls -l
+      - name: horusec scanner upload
+        run: horusec start -p "./prime-number" -a b8b25864-2f13-4f70-b133-163fe7e7ced4 -n github-repo 
       - name: Scanning Service
         run: horusec start -p "./prime-number" -o="json" -O="./results.json"
       - name: Configure AWS Credentials
